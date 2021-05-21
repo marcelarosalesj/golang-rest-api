@@ -19,3 +19,7 @@ curl localhost:8000/posts
 # POST operation
 curl -d '{"title":"Title 1", "text":"This book is about ..."}' -H "Content-Type: application/json" -X POST http://localhost:8000/posts
 ```
+- To run Unit Testing
+```
+go test golang-rest-api/service -v
+```
