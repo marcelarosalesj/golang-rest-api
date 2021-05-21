@@ -6,11 +6,15 @@ import (
 
 	"golang-rest-api/controller"
 	router "golang-rest-api/http"
+	"golang-rest-api/repository"
+	"golang-rest-api/service"
 )
 
 var (
-	postController controller.PostController = controller.NewPostController()
-	httpRouter     router.Router             = router.NewMuxRouter()
+	postRepository repository.PostRepository = repository.NewFirestoreRepository()
+	postService    service.PostService       = service.NewPostService(postRepository)
+	postController controller.PostController = controller.NewPostController(postService)
+	httpRouter     router.Router             = router.NewChiRouter()
 )
 
 func main() {
