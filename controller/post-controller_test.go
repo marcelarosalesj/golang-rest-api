@@ -8,9 +8,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"golang-rest-api/entity"
-	"golang-rest-api/repository"
-	"golang-rest-api/service"
+	"github.com/marcelarosalesj/golang-rest-api/entity"
+	"github.com/marcelarosalesj/golang-rest-api/repository"
+	"github.com/marcelarosalesj/golang-rest-api/service"
 
 	"github.com/stretchr/testify/assert"
 )

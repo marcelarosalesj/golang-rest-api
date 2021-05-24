@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"golang-rest-api/entity"
+	"github.com/marcelarosalesj/golang-rest-api/entity"
 
 	_ "github.com/mattn/go-sqlite3"
 )

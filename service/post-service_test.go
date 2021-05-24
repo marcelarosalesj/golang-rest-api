@@ -1,8 +1,9 @@
 package service
 
 import (
-	"golang-rest-api/entity"
 	"testing"
+
+	"github.com/marcelarosalesj/golang-rest-api/entity"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"

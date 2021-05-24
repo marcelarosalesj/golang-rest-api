@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"golang-rest-api/entity"
+	"github.com/marcelarosalesj/golang-rest-api/entity"
 )
 
 type PostRepository interface {

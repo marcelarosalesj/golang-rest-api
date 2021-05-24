@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"golang-rest-api/entity"
-	"golang-rest-api/errors"
-	"golang-rest-api/service"
+	"github.com/marcelarosalesj/golang-rest-api/entity"
+	"github.com/marcelarosalesj/golang-rest-api/errors"
+	"github.com/marcelarosalesj/golang-rest-api/service"
 )
 
 type controller struct{}

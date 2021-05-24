@@ -1,4 +1,4 @@
-module golang-rest-api
+module github.com/marcelarosalesj/golang-rest-api
 
 go 1.16
 

@@ -1,13 +1,12 @@
 package main
 
 import (
-	"fmt"
-	"net/http"
+	"os"
 
-	"golang-rest-api/controller"
-	router "golang-rest-api/http"
-	"golang-rest-api/repository"
-	"golang-rest-api/service"
+	"github.com/marcelarosalesj/golang-rest-api/controller"
+	router "github.com/marcelarosalesj/golang-rest-api/http"
+	"github.com/marcelarosalesj/golang-rest-api/repository"
+	"github.com/marcelarosalesj/golang-rest-api/service"
 )
 
 var (
@@ -18,13 +17,8 @@ var (
 )
 
 func main() {
-	const port string = ":8000"
-
-	httpRouter.GET("/", func(resp http.ResponseWriter, req *http.Request) {
-		fmt.Fprintln(resp, "Up and running")
-	})
 
 	httpRouter.GET("/posts", postController.GetPosts)
 	httpRouter.POST("/posts", postController.AddPost)
-	httpRouter.SERVE(port)
+	httpRouter.SERVE(os.Getenv("PORT"))
 }

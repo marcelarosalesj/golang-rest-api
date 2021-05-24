@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 
-	"golang-rest-api/entity"
+	"github.com/marcelarosalesj/golang-rest-api/entity"
 
 	"google.golang.org/api/iterator"
 
